@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
     hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
   };
 
-  env.ASTRO_TELEMETRY_DISABLED = 1;
+  env.NEXT_TELEMETRY_DISABLED = 1;
 
   buildPhase = ''
     runHook preBuild

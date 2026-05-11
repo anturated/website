@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* TODO: light theme */
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #11140f;
+    --foreground: #e1e4da;
+
+    --primary:   #a4d396;
+    --secondary: #bbcbb2;
+    --tertiary:  #a0cfd2;
+
+    --outline: #8d9387;
+    --outline-variant: #43483f;
+  }
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+}
+
+body {
+  font-family: "Maple Mono";
+}

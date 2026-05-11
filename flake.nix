@@ -8,7 +8,7 @@
       type = "github";
       owner = "NixOS";
       repo = "nixpkgs";
-      ref = "nixos-unstable";
+      ref = "nixos-25.11"; # using stable because lsps are acting up
     };
   };
 }
