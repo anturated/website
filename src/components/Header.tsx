@@ -6,11 +6,11 @@ import { Divider, Dot } from "./Dividers"
 
 export default function Header() {
   return (
-    <div className="flex flex-row justify-between gap-[1ch] items-center max-w-3xl h-15 mx-auto">
+    <div className="flex flex-row justify-between gap-[1ch] items-center max-w-3xl h-15 mx-auto font-semibold select-none">
       <Dot />
       <Divider />
 
-      <Link href="/" className="text-primary font-semibold" >
+      <Link href="/" className="text-primary" >
         anturated
       </Link>
 
