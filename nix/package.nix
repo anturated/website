@@ -21,7 +21,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   pnpmDeps = fetchPnpmDeps {
     inherit (finalAttrs) pname version src;
     fetcherVersion = 3;
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    hash = "sha256-aiKHxIrB1MfrWQhMvDjI1X/9Scifnr07VQHR2whDGRM=";
   };
 
   env.NEXT_TELEMETRY_DISABLED = 1;
