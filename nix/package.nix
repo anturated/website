@@ -26,6 +26,9 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   env.NEXT_TELEMETRY_DISABLED = 1;
 
+  # nextjs should be good without
+  dontFixup = true;
+
   buildPhase = ''
     runHook preBuild
     pnpm run build
@@ -35,9 +38,10 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   installPhase = ''
     runHook preInstall
 
-    # for nginx
     mkdir -p "$out"
-    cp -r dist/* "$out"
+    cp -r .next/standalone/. "$out"
+    cp -r .next/static "$out/.next/static"
+    cp -r public "$out/public"
 
     runHook postInstall
   '';
