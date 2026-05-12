@@ -10,7 +10,7 @@ export default function Header() {
       <Dot />
       <Divider />
 
-      <Link href="/" className="text-primary" >
+      <Link href="/" className="text-primary hover:text-tertiary" >
         anturated
       </Link>
 
@@ -31,7 +31,7 @@ export default function Header() {
 }
 
 function StyledLink({ href, children }: { href: string, children: ReactNode }) {
-  return <Link href={href} className="text-secondary" >
+  return <Link href={href} className="text-secondary hover:text-tertiary" >
     {children}
   </Link>
 }
