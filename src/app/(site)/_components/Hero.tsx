@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       {/* STATUS */}
-      <span>I'll add more stuff when i have the time. For now you can check out this stuff:</span>
+      <span>I'll add more stuff when i have the time. For now you can check out this:</span>
     </div>
   )
 }
