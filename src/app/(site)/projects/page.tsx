@@ -2,7 +2,7 @@ import ProjectCard from "./_components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div className="grid grid-cols-2 gap-2 gap-y-8 my-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 gap-y-8 my-auto">
       <ProjectCard
         title="mc-fleet"
         description="WIP itzg/docker-minecraft-server kickstarter"
