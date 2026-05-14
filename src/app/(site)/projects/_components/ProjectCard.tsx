@@ -17,7 +17,7 @@ export default function ProjectCard({
     href={href}
   >
     <FvkitImage
-      className="size-12 rounded-xl"
+      className="size-12 rounded-xl object-contain shrink-0"
       src={img}
     />
     <div className="flex flex-col gap-2">
