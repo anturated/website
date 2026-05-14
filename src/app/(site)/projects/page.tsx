@@ -1,8 +1,10 @@
+import BackLink from "@/components/BackLink";
 import ProjectCard from "./_components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 gap-y-8 my-auto">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 gap-2 gap-y-8 my-auto">
+      <BackLink className="absolute -top-14"/>
       <ProjectCard
         title="mc-fleet"
         description="WIP itzg/docker-minecraft-server kickstarter"
