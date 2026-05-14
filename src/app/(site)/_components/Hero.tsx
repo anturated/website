@@ -1,5 +1,4 @@
 import FvkitImage from "@/components/FvkitImage"
-import Image from "next/image"
 
 export default function Hero() {
   return (
