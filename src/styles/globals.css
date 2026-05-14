@@ -17,6 +17,8 @@
 
     --outline: #8d9387;
     --outline-variant: #43483f;
+
+    --hovered: #1d211b;
   }
 }
 
@@ -32,6 +34,8 @@
 
   --color-outline: var(--outline);
   --color-outline-variant: var(--outline-variant);
+
+  --color-hovered: var(--hovered);
 }
 
 body {

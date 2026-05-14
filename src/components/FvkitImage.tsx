@@ -1,16 +1,23 @@
 import Image from "next/image";
 
-export default function FvkitImage(
-  { src, className }:
-    Readonly<{ src: string, className?: string }>
-) {
+export default function FvkitImage({
+  src,
+  alt = "alt",
+  className,
+  max = 128,
+}: Readonly<{
+  src: string,
+  alt?: string,
+  className?: string
+  max?: number
+}>) {
   return (
-    <div className={"relative overflow-hidden " + className}>
-      <Image
-        src={src}
-        alt="alt"
-        fill
-      />
-    </div>
+    <Image
+      src={src}
+      alt={alt}
+      className={className}
+      width={max}
+      height={max}
+    />
   )
 }

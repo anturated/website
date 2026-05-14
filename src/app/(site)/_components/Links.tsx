@@ -4,9 +4,7 @@ import { ReactNode } from "react";
 export default function Links() {
   return (
     <div className="grid grid-cols-2 gap-2">
-      {/* TODO: make an actual projects page */}
-      {/* <MyLink href="/projects"> */}
-      <MyLink href="https://github.com/anturated">
+      <MyLink href="/projects">
         projects
       </MyLink>
       {/* <MyLink href="/blog"> */}
