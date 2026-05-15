@@ -16,7 +16,7 @@ export default function Links() {
 
 function MyLink({ children, href }: Readonly<{ children: ReactNode, href: string }>) {
   return <Link
-    className="flex flex-row justify-between w-full p-2 hover:bg-hovered rounded-xl"
+    className="flex flex-row justify-between w-full py-2 hover:bg-hovered rounded-xl"
     href={href}>
     <span>[</span>
     <span className="text-tertiary">

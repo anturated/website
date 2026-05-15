@@ -5,11 +5,13 @@ export default function FvkitImage({
   alt = "alt",
   className,
   max = 128,
+  loading,
 }: Readonly<{
   src: string,
   alt?: string,
   className?: string
   max?: number
+  loading?: "eager" | "lazy",
 }>) {
   return (
     <Image
@@ -18,6 +20,7 @@ export default function FvkitImage({
       className={className}
       width={max}
       height={max}
+      loading={loading}
     />
   )
 }
