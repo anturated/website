@@ -9,13 +9,20 @@ export function Dot() {
 }
 
 export function SepWithText({ children }: Readonly<{ children: ReactNode }>) {
-  return <div
-    className="flex flex-row w-full gap-[1ch] text-outline"
-  >
+  return <div className="flex flex-row items-center gap-[1ch] italic text-outline" >
     <Dot />
-    <Divider />
+    <Divider fill={true} />
     {children}
-    <Divider />
+    <Divider fill={true} />
+    <Dot />
+  </div>
+}
+
+export function Sep() {
+
+  return <div className="flex flex-row items-center gap-[1ch] italic text-outline" >
+    <Dot />
+    <Divider fill={true} />
     <Dot />
   </div>
 }

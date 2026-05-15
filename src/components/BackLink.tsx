@@ -15,7 +15,7 @@ export default function BackLink({ className = "" }: Readonly<{ className?: stri
 
   return <Link
     href={up}
-    className={"text-outline italic hover:underline" + ` ${className}`}
+    className={"block text-outline italic hover:underline w-full py-3 " + ` ${className}`}
   >
     {"<- Go back"}
   </Link>
