@@ -7,9 +7,10 @@ export default function Links({ className = "" }: Readonly<{ className?: string 
       <MyLink href="/projects">
         projects
       </MyLink>
-      {/* <MyLink href="/blog"> */}
-      {/*   blog */}
-      {/* </MyLink> */}
+
+      <MyLink href="https://git.anturated.dev/explore/repos">
+        forge
+      </MyLink>
     </div>
   )
 }
