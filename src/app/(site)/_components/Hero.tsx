@@ -11,6 +11,7 @@ export default function Hero() {
       <FvkitImage
         src="/pfp.png"
         max={256}
+        loading="eager"
         className="size-[7ch] md:size-[20ch] rounded-full outline-primary outline"
       />
       <div className="flex flex-col justify-around md:justify-between">

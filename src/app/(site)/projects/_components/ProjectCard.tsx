@@ -19,6 +19,7 @@ export default function ProjectCard({
     <FvkitImage
       className="size-12 rounded-xl object-contain shrink-0"
       src={img}
+      loading="eager"
     />
     <div className="flex flex-col gap-2">
       <span className="text-3xl text-secondary font-semibold">{title}</span>
