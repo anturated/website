@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export default function Links({ className = "" }: Readonly<{ className?: string }>) {
   return (
-    <div className={"grid grid-cols-2 gap-2" + ` ${className}`}>
+    <div className={"grid grid-cols-2 gap-[1ch]" + ` ${className}`}>
       <MyLink href="/projects">
         projects
       </MyLink>
