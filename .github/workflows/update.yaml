@@ -1,0 +1,20 @@
+name: Refresh info on fywion
+
+on:
+  workflow_dispatch:
+  push:
+
+permissions: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Ask fywion to update
+        run: |
+          gh api repos/anturated/fywion/actions/workflows/on-push.yaml/dispatches \
+            -f ref=master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN_UPDATES }}
