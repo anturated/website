@@ -1,4 +1,4 @@
-import { Sep, SepWithText } from "@/components/Dividers";
+import { Sep } from "@/components/Dividers";
 import Hero from "./_components/Hero";
 import Links from "./_components/Links";
 
