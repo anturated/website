@@ -1,3 +1,7 @@
 export default function BlogPage() {
-  return "test123456"
+  return (
+    <div className="flex flex-col items-center justify-around my-auto">
+      Under construction.
+    </div>
+  )
 }
